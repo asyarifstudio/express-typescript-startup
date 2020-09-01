@@ -2,10 +2,21 @@
   "name": "olp-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "run": "./node_modules/nodemon/bin/nodemon.js",
+    "debug": "./node_modules/nodemon/bin/nodemon.js --inspect"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "body-parser": "^1.19.0",
+    "console-stamp": "^0.2.9",
+    "express": "^4.17.1"
+  }
 }
